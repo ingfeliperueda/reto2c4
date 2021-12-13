@@ -36,13 +36,13 @@ public class ProductController {
         return productService.getProduct(reference);
     }
 
-    @PostMapping("/all")
+    @PostMapping("/new")
     @ResponseStatus(HttpStatus.CREATED)
     public Product create(@RequestBody Product product) {
         return productService.create(product);
     }
 
-    @PutMapping("/all")
+    @PutMapping("/update")
     @ResponseStatus(HttpStatus.CREATED)
     public Product update(@RequestBody Product product) {
         return productService.update(product);
