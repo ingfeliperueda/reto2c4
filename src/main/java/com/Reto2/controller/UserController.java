@@ -28,7 +28,7 @@ public class UserController {
         return servicio.listAll();
     }
 
-    @PostMapping("/new")
+    @PostMapping("/all")
     @ResponseStatus(HttpStatus.CREATED)
     public User create(@RequestBody User user) {
         return servicio.create(user);
