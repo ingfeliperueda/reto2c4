@@ -42,7 +42,7 @@ public class ProductController {
         return productService.create(product);
     }
 
-    @PutMapping("/update")
+    @PutMapping("/all")
     @ResponseStatus(HttpStatus.CREATED)
     public Product update(@RequestBody Product product) {
         return productService.update(product);
