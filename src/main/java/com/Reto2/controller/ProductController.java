@@ -36,7 +36,7 @@ public class ProductController {
         return productService.getProduct(reference);
     }
 
-    @PostMapping("/all")
+    @PostMapping("/new")
     @ResponseStatus(HttpStatus.CREATED)
     public Product create(@RequestBody Product product) {
         return productService.create(product);
